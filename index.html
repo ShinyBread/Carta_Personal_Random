@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="website icon" type="png" href="assets/FN1wR1bXsAQvc7h.jpg">
+  <title>ShinyBread</title>
+</head>
+<body>
+  <div class="profile-canvas">
+    <div class="profile-img"></div>
+    <div class="contenedor">
+      <section class="buttons">
+        <a href="https://twitter.com/_ShinyBread_" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/ShinyBread" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCDesUDirhVMGmkv9ywX0BMA" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.twitch.tv/shinybre4d" target="_blank">
+          <i class="fab fa-twitch"></i>
+        </a>
+      </section>
+    </div>
+  </div>
+  <div class="profile-img">
+  </div>
+  <div id="preloader" style="display: none;">
+    <div class="saving">
+      <span class="dots"></span>
+      <span class="dots"></span>
+      <span class="dots"></span>
+      <span class="dots"></span>
+      <span class="dots"></span>
+    </div>
+  </div>
+  <script>
+    function showPreloader() {
+        document.getElementById("preloader").style.display = "flex";
+      }
+  
+      function hidePreloader() {
+        document.getElementById("preloader").style.display = "none";
+      }
+  
+      showPreloader();
+      setTimeout(function() {
+        hidePreloader();
+      }, 5000);
+  </script>
+</body>
+</html>

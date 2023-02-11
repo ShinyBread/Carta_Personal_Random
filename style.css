@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background: url(assets/lofi-nightlife-city-moewalls.com.gif);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: radial-gradient(to top, #eb96e8, #fcb8fb);
+  min-height: 100vh;
+  min-width: 100vw;
+
+}
+
+.profile-canvas {
+      border: 20px solid black;
+      border-radius: 20px;
+      display: block;
+      margin: 40px auto;
+      outline: 15px solid #ffffff;
+      outline-offset: 10px;
+      background-image: url(assets/anime-original-cable-lines-4k-e4-1920x1080.png);
+      background-size: cover;
+      opacity: .4;
+      height: 87.5vh;
+      width: 50vw;
+      cursor: pointer;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+@media (max-width: 767px) {
+  .profile-canvas {
+    height: 90vh;
+    width: 80vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: 15px solid #ffffff;
+    outline-offset: 15px;
+  }
+}
+
+.profile-img {
+  display: flex;
+  width: 30vh;
+  height: 30vh;
+  align-items: flex-end;
+  justify-content: center;
+  background-attachment: scroll;
+  outline: 10px solid #000;
+  border-radius: 100%;
+  background-image: url(assets/9c44cf4f67579f5a06eefb629a072843.png);
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .profile-img {
+    height: 200px;
+    width: 200px;
+    outline: 5px solid black;
+  }
+}
+.contenedor {
+  display: flex;
+  margin: 2.5vh auto;
+  width: 30vw;
+  height: 10vh;
+  background-color: white;
+  opacity: .7;
+  outline: 15px solid black;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -250%);
+  transition: 0.2s;
+  align-items: center;
+  justify-content: center;
+  top: 95%;
+}
+
+@media (max-width: 767px) {
+  .contenedor {
+    height: 75px;
+    width: 300px;
+    outline: 5px solid black;
+    border-radius: 20px;
+  }
+}
+
+.buttons{
+  display: flex;
+  margin: 10% auto;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.buttons a{
+  margin-top: 5px;
+  width: 20%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: .4;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttons i {
+  font-size: 75px;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+.buttons a{
+  width: 20%;
+  margin-top: 7.5px;
+}
+}
+@media (max-width: 767px) {
+  .buttons i{
+  font-size: 35px;
+  }
+}
+.profile-canvas:hover {
+  opacity: 1;
+  outline: 10px solid black;
+  outline-offset: 0px;
+}
+
+@media (max-width: 767px) {
+  .profile-canvas:hover{
+    outline: 10px solid black;
+  }
+}
+
+.profile-img:hover {
+  outline: 15px solid #000;
+  outline-offset: 15px;
+  box-shadow: 0 0 10px #000;
+}
+
+@media (max-width: 767px) {
+  .profile-img:hover {
+    outline: 10px solid black;
+  }
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+.contenedor:hover{
+    opacity: 1;
+    outline-offset: 15px;
+}
+
+.fa-twitter:hover {
+    color:#00acee;
+    
+}
+
+.fa-github:hover {
+    color:#171515;
+}
+
+.fa-youtube:hover {
+    color:#c4302b;
+}
+
+.fa-twitch:hover {
+    color:#6441a5;
+}
+
+.saving {
+    display: flex;
+    background-color: lightpink;
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .saving .dots {
+    height: 25px;
+    width: 25px;
+    display: block;
+    background: #9614a1;
+    border-radius: 80px;
+    animation-name: opacityDots;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    margin: 0 5px;
+  }
+  .saving .dots:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  .saving .dots:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  .saving .dots:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  .saving .dots:nth-child(4) {
+    animation-delay: 1.2s;
+  }
+  .saving .dots:nth-child(5) {
+    animation-delay: 1.5s;
+  }
+
+  @keyframes opacityDots {
+    0% {
+      opacity: 0.2;
+      transform: scale(0.5);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0.2;
+      transform: scale(0.5);
+    }
+  }
